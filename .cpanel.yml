@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    # Define the deployment path (replace 'username' with your cPanel username)
+    - export DEPLOY_PATH=/home/cngvcmby/public_html
+
+    # Copy HTML and CSS files to the deployment path
+    - /bin/cp -R * ${DEPLOY_PATH}
